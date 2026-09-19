@@ -1,5 +1,6 @@
 # Version 1 will just run on the command line.
 
+'''
 for i in range(1, 100):
     outputLine = ""
     fizz = "Fizz"
@@ -11,9 +12,11 @@ for i in range(1, 100):
     else:
         outputLine = i
     print(outputLine)
-    
+'''
+
 # Trying 2 different things here, idk
-    
+
+'''    
 for i in range(1, 100):
     fizz = i % 3
     buzz = i % 5
@@ -25,3 +28,16 @@ for i in range(1, 100):
         print("Buzz")
     else:
         print(i)
+'''
+
+# Working version.
+
+for i in range(1, 100):
+    word = ""
+    if i % 3 == 0:
+        word += "Fizz"
+    if i % 5 == 0:
+        word += "Buzz"
+    if word == "":
+        word = i
+    print(word)
